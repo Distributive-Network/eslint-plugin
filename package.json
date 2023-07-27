@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-distributive",
+  "name": "@distributive/eslint-plugin",
   "version": "1.0.0",
   "description": "Plugin containing Distributive style guide rules",
   "keywords": [
