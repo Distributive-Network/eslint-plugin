@@ -2,18 +2,18 @@
  * @fileoverview Enforce bracing styles in accordance to the Distributive style guide
  * @author Joash Mathew
  */
-"use strict";
+'use strict';
 
-//------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
 // Requirements
-//------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
 
-const rule = require("../../../lib/rules/brace-style"),
-  RuleTester = require("eslint").RuleTester;
+const rule = require('../../../lib/rules/brace-style'),
+  RuleTester = require('eslint').RuleTester;
 
-//------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
 // Tests
-//------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
 
 const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
 ruleTester.run("brace-style", rule, {
