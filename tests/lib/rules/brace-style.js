@@ -27,19 +27,19 @@ ruleTester.run("brace-style", rule, {
   invalid: [
     {
       code: `function helloWorld() {\n  console.log("Hello, world");\n}`,
-      errors: [{ message: "Function declarations should use lexical braces" }],
+      errors: [{ messageId: "functionDeclaration" }],
     },
     {
       code: `const foo = function ()\n{\n return 1;\n}`,
-      errors: [{ message: "Function expressions should use literal braces" }],
+      errors: [{ messageId: "functionExpression" }],
     },
     {
       code: `const bar = () => \n{\n  return 1;\n}`,
-      errors: [{ message: "Function expressions should use literal braces" }],
+      errors: [{ messageId: "functionExpression" }],
     },
     {
       code: `const hi = \n{\n foo: "bar",\n bar: "foo"\n}`,
-      errors: [{ message: "Object literals should use literal braces" }],
+      errors: [{ messageId: "objectLiteral" }],
     }
   ],
 });
