@@ -32,13 +32,12 @@
     "test": "vitest",
     "update:eslint-docs": "eslint-doc-generator"
   },
-  "dependencies": {
-    "requireindex": "^1.2.0"
-  },
   "devDependencies": {
+    "@distributive/eslint-config": "1.0.4",
     "eslint": "^8.48.0",
     "eslint-doc-generator": "^1.4.3",
     "eslint-plugin-eslint-plugin": "^5.1.1",
+    "eslint-plugin-jsdoc": "46.5.0",
     "eslint-plugin-n": "^16.0.2",
     "npm-run-all": "^4.1.5",
     "vitest": "^0.34.3"

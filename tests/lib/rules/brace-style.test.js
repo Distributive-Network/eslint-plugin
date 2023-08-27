@@ -1,7 +1,12 @@
 /**
- * @fileoverview Enforce bracing styles in accordance to the Distributive style guide
- * @author Joash Mathew
+ * @file    brace-style.test.js - Tests the custom brace-style rule against
+ *          valid & invalid test cases.
+ *
+ * @author  Joash Mathew <joash@distributive.network>
+ * @author  Bryan Hoang <bryan@distributive.network>
+ * @date    June 2023, Aug. 2023
  */
+
 'use strict';
 
 // ------------------------------------------------------------------------------
