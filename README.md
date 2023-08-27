@@ -28,7 +28,6 @@ Add `distributive` to the plugins section of your `.eslintrc` configuration file
 }
 ```
 
-
 Then configure the rules you want to use under the rules section.
 
 ```json
@@ -40,5 +39,11 @@ Then configure the rules you want to use under the rules section.
 ```
 
 ## Rules
- - Brace style: Follow the Distributive style guide's guidelines on braces for function declarations, function expressions and object literals.
 
+<!-- begin auto-generated rules list -->
+
+| Name                                     | Description                                                          |
+| :--------------------------------------- | :------------------------------------------------------------------- |
+| [brace-style](docs/rules/brace-style.md) | Enforce bracing styles in accordance to the Distributive style guide |
+
+<!-- end auto-generated rules list -->
