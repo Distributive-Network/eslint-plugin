@@ -4,14 +4,12 @@ module.exports = {
   root: true,
   extends: [
     "eslint:recommended",
-    "plugin:node/recommended",
+    "plugin:n/recommended",
     "plugin:eslint-plugin/tests",
     "plugin:eslint-plugin/rules-recommended",
   ],
   env: {
     node: true,
-    es6: true,
-    browser: true
   },
   overrides: [
     {
