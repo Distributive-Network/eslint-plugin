@@ -7,8 +7,19 @@
     "eslintplugin",
     "eslint-plugin"
   ],
+  "homepage": "https://github.com/Distributive-Network/eslint-plugin-distributive#readme",
+  "bugs": {
+    "url": "https://github.com/Distributive-Network/eslint-plugin-distributive/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Distributive-Network/eslint-plugin-distributive.git"
+  },
   "license": "MIT",
   "author": "Joash Mathew",
+  "contributors": [
+    "Bryan Hoang <bryan@distributive.network>"
+  ],
   "exports": "./lib/index.js",
   "main": "./lib/index.js",
   "files": [
