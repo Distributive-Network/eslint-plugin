@@ -21,7 +21,8 @@ ruleTester.run("brace-style", rule, {
     `function helloWorld()\n{\n console.log("Hello, world");\n}`,
     `const foo = function () {\n  return 1;\n}`,
     `const bar = () => {\n  return 1;\n}`,
-    `const hi = {\n foo: "bar"\n}`
+    `const hi = {\n foo: "bar"\n}`,
+    `const path = require("node:path");`,
   ],
 
   invalid: [
