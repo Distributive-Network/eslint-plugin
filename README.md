@@ -20,7 +20,7 @@ guide.
 ## Install
 
 ```console
-npm install --save-dev eslint @distributive/eslint-plugin
+npm add --save-dev eslint @distributive/eslint-plugin
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ file. You can omit the `eslint-plugin-` prefix:
 ```javascript
 {
   plugins: [
-    "distributive",
+    "@distributive",
   ],
 }
 ```
@@ -41,8 +41,19 @@ Then configure the rules you want to use under the rules section.
 ```javascript
 {
   rules: {
-    "distributive/brace-style": "error",
+    "@distributive/brace-style": "error",
   },
+}
+```
+
+You can also extend from the plugin's recommended configuration to enable the
+rule.
+
+```javascript
+{
+  extends: [
+    "plugin:@distributive/recommended",
+  ],
 }
 ```
 
@@ -50,9 +61,13 @@ Then configure the rules you want to use under the rules section.
 
 <!-- begin auto-generated rules list -->
 
-| Name                                     | Description                                                          |
-| :--------------------------------------- | :------------------------------------------------------------------- |
-| [brace-style](docs/rules/brace-style.md) | Enforce bracing styles in accordance to the Distributive style guide |
+💼 Configurations enabled in.\
+✅ Set in the `recommended` configuration.\
+🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
+
+| Name                                     | Description                                                          | 💼 | 🔧 |
+| :--------------------------------------- | :------------------------------------------------------------------- | :- | :- |
+| [brace-style](docs/rules/brace-style.md) | Enforce bracing styles in accordance to the Distributive style guide | ✅  | 🔧 |
 
 <!-- end auto-generated rules list -->
 
