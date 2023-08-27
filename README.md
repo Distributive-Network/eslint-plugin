@@ -1,40 +1,48 @@
 # eslint-plugin-distributive
 
-ESLint rule to enforce brace styles according to the Distributive style guide
+[![npm version of the package][npm-version-img]][npm-version-url]
+[![CI status][ci-status-img]][ci-status-url]
+[![standard-readme compliant][standard-readme-img]][standard-readme-url]
 
-## Installation
+An ESLint rule to enforce brace styles according to the Distributive style
+guide.
 
-You'll first need to install [ESLint](https://eslint.org/):
+## Table of Contents
 
-```sh
-npm i eslint --save-dev
-```
+<!--toc:start-->
+- [Install](#install)
+- [Usage](#usage)
+- [Rules](#rules)
+- [Contributing](#contributing)
+- [License](#license)
+<!--toc:end-->
 
-Next, install `eslint-plugin-distributive`:
+## Install
 
-```sh
-npm install git@github.com:Distributive-Network/eslint-plugin-distributive.git --save-dev
+```console
+npm install --save-dev eslint @distributive/eslint-plugin
 ```
 
 ## Usage
 
-Add `distributive` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `distributive` to the plugins section of your `.eslintrc` configuration
+file. You can omit the `eslint-plugin-` prefix:
 
-```json
+```javascript
 {
-    "plugins": [
-        "distributive"
-    ]
+  plugins: [
+    "distributive",
+  ],
 }
 ```
 
 Then configure the rules you want to use under the rules section.
 
-```json
+```javascript
 {
-    "rules": {
-        "distributive/rule-name": 1 // 0 - off, 1 - warn, 2 - error
-    }
+  rules: {
+    "distributive/brace-style": "error",
+  },
 }
 ```
 
@@ -47,3 +55,24 @@ Then configure the rules you want to use under the rules section.
 | [brace-style](docs/rules/brace-style.md) | Enforce bracing styles in accordance to the Distributive style guide |
 
 <!-- end auto-generated rules list -->
+
+## Contributing
+
+PRs accepted.
+
+Small note: If editing the README, please conform to the
+[standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+
+## License
+
+MIT © 2023 Distributive Corp.
+
+[npm-version-img]: https://img.shields.io/npm/v/%40distributive/eslint-plugin
+[npm-version-url]: https://www.npmjs.com/package/@distributive/eslint-plugin
+[ci-status-img]:
+	https://github.com/Distributive-Network/eslint-plugin-distributive/actions/workflows/main.yml/badge.svg
+[ci-status-url]:
+	https://github.com/Distributive-Network/eslint-plugin-distributive/actions
+[standard-readme-img]:
+	https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square
+[standard-readme-url]: https://github.com/RichardLitt/standard-readme
