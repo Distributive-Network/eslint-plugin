@@ -43,7 +43,7 @@
     "vitest": "^0.34.3"
   },
   "peerDependencies": {
-    "eslint": ">=7"
+    "eslint": ">=8.40.0"
   },
   "engines": {
     "node": ">=18",
