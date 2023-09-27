@@ -1,4 +1,4 @@
-# eslint-plugin-distributive
+# @distributive/eslint-plugin
 
 [![npm version of the package][npm-version-img]][npm-version-url]
 [![CI status][ci-status-img]][ci-status-url]
@@ -25,36 +25,29 @@ npm add --save-dev eslint @distributive/eslint-plugin
 
 ## Usage
 
-Add `distributive` to the plugins section of your `.eslintrc` configuration
-file. You can omit the `eslint-plugin-` prefix:
+You can extend from the plugin's recommended configuration:
 
 ```javascript
-{
-  plugins: [
-    "@distributive",
-  ],
-}
-```
-
-Then configure the rules you want to use under the rules section.
-
-```javascript
-{
-  rules: {
-    "@distributive/brace-style": "error",
-  },
-}
-```
-
-You can also extend from the plugin's recommended configuration to enable the
-rule.
-
-```javascript
-{
+module.exports = {
   extends: [
-    "plugin:@distributive/recommended",
+    'plugin:@distributive/recommended',
   ],
-}
+};
+```
+
+Or, add `@distributive` to the plugins section of your `.eslintrc`
+configuration file and configure the rules you want to use under the rules
+section:
+
+```javascript
+module.exports = {
+  plugins: [
+    '@distributive',
+  ],
+  rules: {
+    '@distributive/brace-style': 'error',
+  },
+};
 ```
 
 ## Rules
