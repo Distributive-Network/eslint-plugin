@@ -78,9 +78,9 @@ MIT © 2023 Distributive Corp.
 [npm-version-img]: https://img.shields.io/npm/v/%40distributive/eslint-plugin
 [npm-version-url]: https://www.npmjs.com/package/@distributive/eslint-plugin
 [ci-status-img]:
-	https://github.com/Distributive-Network/eslint-plugin-distributive/actions/workflows/main.yml/badge.svg
+	https://github.com/Distributive-Network/eslint-plugin/actions/workflows/main.yml/badge.svg
 [ci-status-url]:
-	https://github.com/Distributive-Network/eslint-plugin-distributive/actions
+	https://github.com/Distributive-Network/eslint-plugin/actions
 [standard-readme-img]:
 	https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square
 [standard-readme-url]: https://github.com/RichardLitt/standard-readme

@@ -7,13 +7,13 @@
     "eslintplugin",
     "eslint-plugin"
   ],
-  "homepage": "https://github.com/Distributive-Network/eslint-plugin-distributive#readme",
+  "homepage": "https://github.com/Distributive-Network/eslint-plugin#readme",
   "bugs": {
-    "url": "https://github.com/Distributive-Network/eslint-plugin-distributive/issues"
+    "url": "https://github.com/Distributive-Network/eslint-plugin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Distributive-Network/eslint-plugin-distributive.git"
+    "url": "git+https://github.com/Distributive-Network/eslint-plugin.git"
   },
   "license": "MIT",
   "author": "Joash Mathew",
