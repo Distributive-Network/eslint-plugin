@@ -76,8 +76,7 @@ switch (key)
     `
 class Foo
 {
-    bar()
-    {
+    bar() {
 
     }
 }
@@ -100,6 +99,12 @@ if (true)
 const invalid = [{
   code: 'foo',
 }];
+`,
+    `
+Foo.prototype.bar = function bar()
+{
+  return 'foobar';
+}
 `
   ],
 
