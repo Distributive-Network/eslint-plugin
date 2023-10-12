@@ -123,5 +123,71 @@ const invalid = [{
     code: 'if (true) {\n}',
     output: 'if (true) \n{\n}',
     errors: [{ messageId: 'sameLineOpen' }],
+  }, {
+    // try...catch
+    code: `
+try {
+  foo();
+} catch (error) {
+  bar();
+}
+`,
+    output: `
+try 
+{
+  foo();
+}
+ catch (error) 
+{
+  bar();
+}
+`,
+    errors: [{ messageId: 'sameLineOpen' }, { messageId: 'sameLineClose' }, { messageId: 'sameLineOpen' }],
+  }, {
+    // try...finally
+    code: `
+try {
+  foo();
+} finally {
+  bar();
+}
+`,
+    output: `
+try 
+{
+  foo();
+}
+ finally 
+{
+  bar();
+}
+`,
+    errors: [{ messageId: 'sameLineOpen' }, { messageId: 'sameLineClose' }, { messageId: 'sameLineOpen' }],
+  }, {
+    // try...catch...finally
+    code: `
+try {
+  foo();
+} catch (error) {
+  bar();
+} finally {
+  baz();
+}
+`,
+    output: `
+try 
+{
+  foo();
+}
+ catch (error) 
+{
+  bar();
+}
+ finally 
+{
+  baz();
+}
+`,
+    errors: [{ messageId: 'sameLineOpen' }, { messageId: 'sameLineClose' }, { messageId: 'sameLineOpen' }, { messageId: 'sameLineClose' }, { messageId: 'sameLineOpen' }],
   }],
 });
