@@ -13,8 +13,9 @@
 // Requirements
 // ------------------------------------------------------------------------------
 
-const rule = require('../../../lib/rules/brace-style'),
-  RuleTester = require('eslint').RuleTester;
+const { RuleTester } = require('eslint');
+
+const rule = require('../../../lib/rules/brace-style');
 
 // ------------------------------------------------------------------------------
 // Tests
