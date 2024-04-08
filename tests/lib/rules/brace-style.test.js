@@ -76,7 +76,8 @@ switch (key)
     `
 class Foo
 {
-    bar() {
+    bar()
+    {
 
     }
 }
@@ -105,6 +106,20 @@ Foo.prototype.bar = function bar()
 {
   return 'foobar';
 }
+`, {
+      code: `
+DcpMessage.from = function DcpMessage$$from(Ctor, signedMessageBody)
+{
+  const foo = 'bar';
+}
+`,
+      only: false,
+    }, `
+const foo = {
+  bar: function () {
+
+  },
+};
 `
   ],
 
@@ -193,6 +208,51 @@ try
   baz();
 }
 `,
-    errors: [{ messageId: 'sameLineOpen' }, { messageId: 'sameLineClose' }, { messageId: 'sameLineOpen' }, { messageId: 'sameLineClose' }, { messageId: 'sameLineOpen' }],
+    errors: [{
+      messageId: 'sameLineOpen',
+    }, {
+      messageId: 'sameLineClose',
+    }, {
+      messageId: 'sameLineOpen',
+    }, {
+      messageId: 'sameLineClose',
+    }, {
+      messageId: 'sameLineOpen',
+    }],
+  }, {
+    code: `
+class Foo {
+    bar() {
+
+    }
+}
+`,
+    output: `
+class Foo 
+{
+    bar() 
+{
+
+    }
+}
+`,
+    errors: [{ messageId: 'sameLineOpen' }, { messageId: 'sameLineOpen' }],
+  }, {
+    code: `
+const foo = {
+  bar: function ()
+  {
+
+  },
+};
+`,
+    output: `
+const foo = {
+  bar: function () {
+
+  },
+};
+`,
+    errors: [{ messageId: 'nextLineOpen' }],
   }],
 });
