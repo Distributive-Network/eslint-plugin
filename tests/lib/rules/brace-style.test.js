@@ -255,5 +255,32 @@ const foo = {
 };
 `,
     errors: [{ messageId: 'nextLineOpen' }],
+  }, {
+    code: `
+do {
+  foo =+ 'bar';
+} while (true);
+`,
+    output: `
+do 
+{
+  foo =+ 'bar';
+}
+ while (true);
+`,
+    errors: [{ messageId: 'sameLineOpen' }, { messageId: 'sameLineClose' }],
+  }, {
+    code: `
+while (true) {
+  count += 1;
+}
+`,
+    output: `
+while (true) 
+{
+  count += 1;
+}
+`,
+    errors: [{ messageId: 'sameLineOpen' }],
   }],
 });
