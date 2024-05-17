@@ -35,7 +35,7 @@ try
 {
   for (let i=0; i < 10; i++)
   {
-    console.log(i);
+    count += 1;
   }
 }
 catch(error) {}
