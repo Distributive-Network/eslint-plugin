@@ -121,7 +121,13 @@ const foo = {
 
   },
 };
-`
+`, {
+      code: `
+while (foo)
+  bar = 'baz';
+`,
+      only: false,
+    },
   ],
 
   invalid: [{
